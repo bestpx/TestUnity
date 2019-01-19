@@ -6,6 +6,13 @@ using UnityEditor;
 
 public class AssetBundleManager : MonoBehaviour
 {
+    public static AssetBundleManager Instance;
+
+    void Awake()
+    {
+        Instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,16 +25,10 @@ public class AssetBundleManager : MonoBehaviour
         
     }
 
-    public void LoadAsset()
+    public AssetBundle LoadAssetBundle()
     {
-
-    }
-
-    [MenuItem("Tools/BuildAssetBundle")]
-    public static void BuildAssetBundle()
-    {
-        var outputPath = Path.Combine(Application.dataPath, "AssetBundles");
-        BuildPipeline.BuildAssetBundles(outputPath, 
-            UnityEditor.BuildAssetBundleOptions.ForceRebuildAssetBundle, EditorUserBuildSettings.activeBuildTarget);
+        var filePath = Path.Combine(Application.dataPath, "AssetBundles", "level1");
+        var ab = AssetBundle.LoadFromFile(filePath);
+        return ab;
     }
 }
