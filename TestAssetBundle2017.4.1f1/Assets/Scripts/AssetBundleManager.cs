@@ -15,7 +15,7 @@ public class AssetBundleManager : MonoBehaviour
     public AssetBundle LoadAssetBundle()
     {
         var abFolderPath = Path.Combine(Application.dataPath, "AssetBundles");
-        var filePath = Path.Combine(abFolderPath, "level1");
+        var filePath = Path.Combine(abFolderPath, "Level1");
         var ab = AssetBundle.LoadFromFile(filePath);
         return ab;
     }
