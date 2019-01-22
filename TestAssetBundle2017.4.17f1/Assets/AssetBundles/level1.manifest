@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 636758331
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: daa395b1e54562132bbf969bdbe45fd9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c225a474a4686b0a2eec4e91441f8301
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6d0c67fa1ecd34c61a3c1575deaa308a, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+Assets:
+- Assets/DLC/Level1/SpriteAtlas.spriteatlas
+- Assets/DLC/Level1/LevelAssets.asset
+- Assets/DLC/Level1/background.jpg
+- Assets/DLC/Level1/button.png
+- Assets/DLC/Level1/title.jpg
+Dependencies: []
